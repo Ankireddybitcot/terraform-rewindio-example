@@ -1,5 +1,5 @@
 test
-# terraform-rewindio-example
+# terraform- Ankireddybitcot -example
 
 An example repo showing the general layout of most of our Terraform repos at Rewind and illustrating how the Terraform Github actions are configured.
 

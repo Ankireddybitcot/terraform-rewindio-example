@@ -118,7 +118,7 @@ jobs:
           echo "aws_secret_access_key = ${{ secrets.AWS_SECRET_ACCESS_KEY_PRODUCTION }}" >> .aws/credentials
 
       - name: Terraform Init
-        uses: rewindio/terraform-github-actions@master
+        uses:  Ankireddybitcot /terraform-github-actions@master
         if: steps.determine-command.outputs.do_apply == 'true'
         with:
           tf_actions_version: ${{ env.TF_VERSION }}
@@ -131,7 +131,7 @@ jobs:
 
       - name: Terraform Apply
         if: steps.determine-command.outputs.do_apply == 'true'
-        uses: rewindio/terraform-github-actions@master
+        uses:  Ankireddybitcot /terraform-github-actions@master
         with:
           tf_actions_version: ${{ env.TF_VERSION }}
           tf_actions_subcommand: apply
